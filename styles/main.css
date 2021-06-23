@@ -12,7 +12,7 @@ body * {
   color: var(--text);
 }
 
-header section.heading {
+header div.heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,15 +20,15 @@ header section.heading {
   box-shadow: 0px 1px 5px var(--shadow);
   background: var(--elements);
 }
-header section.heading h1 {
+header div.heading h1 {
   margin: 0;
 }
 @media (max-width: 450px) {
-  header section.heading h1 {
+  header div.heading h1 {
     font-size: 1rem;
   }
 }
-header section.heading button {
+header div.heading button {
   background: none;
   border: none;
   font-size: 1rem;
@@ -39,37 +39,37 @@ header section.heading button {
   border-radius: 8px;
 }
 @media (max-width: 450px) {
-  header section.heading button {
+  header div.heading button {
     font-size: 0.8rem;
   }
 }
-header section.heading button:hover {
+header div.heading button:hover {
   background: var(--shadow);
 }
-header section.heading button i {
+header div.heading button i {
   vertical-align: middle;
   margin-right: 0.5rem;
   margin-bottom: 0.1em;
 }
 @media (max-width: 450px) {
-  header section.heading button i {
+  header div.heading button i {
     font-size: 1.2rem;
   }
 }
-header section.search-filter {
+header div.search-filter {
   padding: 3rem 5vw;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 768px) {
-  header section.search-filter {
+  header div.search-filter {
     flex-direction: column;
     align-items: flex-start;
     row-gap: 3rem;
     padding: 1.5rem 5vw;
   }
 }
-header section.search-filter input, header section.search-filter select {
+header div.search-filter input, header div.search-filter select {
   padding: 1rem 2rem;
   border: none;
   box-shadow: 0px 0px 8px var(--shadow);
@@ -79,25 +79,25 @@ header section.search-filter input, header section.search-filter select {
   box-sizing: border-box;
   background: var(--elements);
 }
-header section.search-filter input {
+header div.search-filter input {
   width: 25%;
 }
 @media (max-width: 768px) {
-  header section.search-filter input {
+  header div.search-filter input {
     width: 100%;
   }
 }
-header section.search-filter select {
+header div.search-filter select {
   padding: 1rem;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   padding-right: 5rem;
 }
-header section.search-filter .select-wrapper {
+header div.search-filter .select-wrapper {
   position: relative;
 }
-header section.search-filter .select-wrapper::after {
+header div.search-filter .select-wrapper::after {
   content: "arrow_drop_down";
   font-size: 1.2rem;
   position: absolute;
@@ -112,58 +112,58 @@ main {
   padding: 5vw;
   padding-top: 0rem;
 }
-main section.country-card-grid {
+main div.country-card-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(16rem, 1fr));
   gap: 5rem;
 }
 @media (max-width: 1024px) {
-  main section.country-card-grid {
+  main div.country-card-grid {
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   }
 }
-main section.country-card-grid article.card {
+main div.country-card-grid article.card {
   border-radius: 8px;
   box-shadow: 0px 0px 8px var(--shadow);
   overflow: hidden;
   cursor: pointer;
   background: var(--elements);
 }
-main section.country-card-grid article.card * {
+main div.country-card-grid article.card * {
   margin: 0;
 }
-main section.country-card-grid article.card figure {
+main div.country-card-grid article.card figure {
   height: 50%;
   overflow: hidden;
 }
-main section.country-card-grid article.card figure img {
+main div.country-card-grid article.card figure img {
   width: 100%;
 }
-main section.country-card-grid article.card h2 {
+main div.country-card-grid article.card h2 {
   font-size: 1.2rem;
   padding: 1rem 1.5rem;
   padding-bottom: 0;
 }
-main section.country-card-grid article.card dl {
+main div.country-card-grid article.card dl {
   padding: 1rem 1.5rem;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   row-gap: 0.5rem;
 }
-main section.country-card-grid article.card dl dt {
+main div.country-card-grid article.card dl dt {
   font-weight: 600;
 }
-main section.country-details {
+main div.country-details {
   font-size: 16px;
   margin-top: 5rem;
   display: none;
 }
 @media (max-width: 768px) {
-  main section.country-details {
+  main div.country-details {
     margin-top: 2rem;
   }
 }
-main section.country-details button[aria-label=back], main section.country-details a {
+main div.country-details button[aria-label=back], main div.country-details a {
   box-shadow: 0px 0px 5px var(--shadow);
   background: var(--elements);
   border: none;
@@ -174,82 +174,82 @@ main section.country-details button[aria-label=back], main section.country-detai
   cursor: pointer;
   background: var(--elements);
 }
-main section.country-details button[aria-label=back] i, main section.country-details a i {
+main div.country-details button[aria-label=back] i, main div.country-details a i {
   vertical-align: middle;
   margin-right: 0.5em;
   margin-bottom: 0.1em;
   font-size: 1.5em;
 }
-main section.country-details article.country {
+main div.country-details article.country {
   display: flex;
   align-items: center;
   gap: 3rem;
   margin-top: 3rem;
 }
 @media (max-width: 768px) {
-  main section.country-details article.country {
+  main div.country-details article.country {
     flex-direction: column;
     align-items: flex-start;
   }
 }
-main section.country-details article.country * {
+main div.country-details article.country * {
   flex-basis: 100%;
 }
-main section.country-details article.country figure {
+main div.country-details article.country figure {
   margin: 0;
 }
-main section.country-details article.country figure img {
+main div.country-details article.country figure img {
   width: 90%;
 }
 @media (max-width: 768px) {
-  main section.country-details article.country figure img {
+  main div.country-details article.country figure img {
     width: 100%;
   }
 }
-main section.country-details article.country h2 {
+main div.country-details article.country h2 {
   font-size: 2em;
   margin-top: 0;
 }
-main section.country-details article.country .country-content {
+main div.country-details article.country .country-content {
   display: flex;
 }
 @media (max-width: 768px) {
-  main section.country-details article.country .country-content {
+  main div.country-details article.country .country-content {
     flex-direction: column;
   }
 }
-main section.country-details article.country .country-content dl * {
+main div.country-details article.country .country-content dl * {
   margin: 0;
 }
-main section.country-details article.country .country-content dl dt, main section.country-details article.country .country-content dl dd {
+main div.country-details article.country .country-content dl dt, main div.country-details article.country .country-content dl dd {
   display: inline;
 }
-main section.country-details article.country .country-content dl dt {
+main div.country-details article.country .country-content dl dt {
   font-weight: 600;
 }
-main section.country-details article.country .country-content dl dt::after {
+main div.country-details article.country .country-content dl dt::after {
   content: ":";
   padding-right: 0.5em;
 }
-main section.country-details article.country .country-content dl span {
+main div.country-details article.country .country-content dl span {
   display: block;
   padding-bottom: 0.5em;
 }
-main section.country-details article.country .border-cont {
+main div.country-details article.country .border-cont {
   margin-top: 3em;
 }
 @media (max-width: 768px) {
-  main section.country-details article.country .border-cont {
+  main div.country-details article.country .border-cont {
     margin-top: 1em;
   }
 }
-main section.country-details article.country .border-cont span {
+main div.country-details article.country .border-cont span {
   font-weight: 600;
   padding: 1em;
   padding-left: 0;
   display: inline-block;
 }
-main section.country-details article.country .border-cont a {
+main div.country-details article.country .border-cont a {
   padding: 0.3rem 1.5rem;
   text-decoration: none;
   font-size: 0.8em;

@@ -16,7 +16,7 @@ body{
 
 header{
     
-    section.heading{
+    div.heading{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -62,7 +62,7 @@ header{
         }
     }
 
-    section.search-filter{
+    div.search-filter{
         padding: 3rem 5vw;
         display: flex;
         justify-content: space-between;
@@ -125,7 +125,7 @@ main{
     padding: 5vw;
     padding-top: 0rem;
 
-    section.country-card-grid{
+    div.country-card-grid{
         display: grid;
         grid-template-columns: repeat(4, minmax(16rem, 1fr));
         gap: 5rem;
@@ -174,7 +174,7 @@ main{
         }
     }
 
-    section.country-details{
+    div.country-details{
         font-size: 16px;
         margin-top: 5rem;
         display: none;
