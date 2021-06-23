@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">    
+    <title>Rest Countries API</title>
+</head>
+<body class="light">
+    <header>
+        <section class="heading">
+            <h1>Where in the world?</h1>
+            <button class="theme" aria-label="Change-Theme" onclick="themeToggle()" id='theme-btn'>
+                <i class="material-icons-outlined " id="theme-icon">dark_mode</i>
+                Dark Mode</button>
+        </section>
+        <section class="search-filter" id="search-header">
+            <input type="text" aria-label="Search" placeholder="Search for a country" id="search">
+            <div class="select-wrapper">
+                <select aria-label="Filter" title="Filter by region" id="filter">
+                    <option value="all" selected>All</option>
+                    <option value="africa">Africa</option>
+                    <option value="americas" >America</option>
+                    <option value="asia" >Asia</option>
+                    <option value="europe" >Europe</option>
+                    <option value="oceania" >Oceania</option>
+                </select>
+            </div>
+           
+        </section>
+    </header>
+    <main >
+        <section class="country-card-grid" id="conutry-grid">
+            
+        </section>
+
+        <section class="country-details" id="country-detail">
+            <button aria-label="back" id="back-btn" onclick="back()"><i class="material-icons">arrow_back</i>Back</button>
+            <div id="country-cont">
+                
+            </div>
+
+        </section>
+        
+    </main>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
