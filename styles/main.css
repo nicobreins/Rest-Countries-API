@@ -114,8 +114,13 @@ main {
 }
 main section.country-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(4, minmax(16rem, 1fr));
   gap: 5rem;
+}
+@media (max-width: 1024px) {
+  main section.country-card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
 }
 main section.country-card-grid article.card {
   border-radius: 8px;
